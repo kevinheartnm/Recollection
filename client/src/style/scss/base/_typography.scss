@@ -1,0 +1,50 @@
+.heading{
+  &__primary{
+    color: #fff;
+    letter-spacing: 1.2rem;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: 600px){
+     letter-spacing: .5rem;
+    }
+  }
+  &__primary--white{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 400;
+  }
+  &__primary--pink{
+    color: pink;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  &__secondary{
+    color: orangered;
+    font-size: 4rem;
+    letter-spacing: .7rem;
+    font-weight: 400;
+    text-align: center;
+    @media only screen and (max-width: 600px){
+     letter-spacing: .2rem;
+    }
+  }
+  &__tertiary{
+    color:pink;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    display:block;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    font-size: 4rem;
+  }
+  &__quaternary{
+    color: #D2A;
+    font-size: 2.5em;
+    letter-spacing: .2em;
+    font-weight: 700;
+    text-align: center;
+  }
+
+}

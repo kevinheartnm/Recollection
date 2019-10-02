@@ -1,0 +1,129 @@
+.btn {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #ccc;
+  &__register{
+    font-size: 1.4rem;
+    background-color: transparent;
+    border:none;
+    margin: auto;
+    display:block;
+    // margin-right: 2rem;
+    color: #5DF;
+    padding:  1rem 0;
+  }
+  &__register:hover{
+    color:#57F;
+    cursor: pointer;
+  }
+  &__register:focus{
+    outline:none;
+  }
+  &__add{
+    font-size: 3rem;
+    background-color: #ff4500;
+    bottom: 8.5rem;
+    right: 2rem;
+    z-index: 10;
+  }
+  &__submit{
+    font-size: 4rem;
+    background-color: #003366;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 5;
+  }
+    &__update-show{
+      animation: fadeIn 2s ease-in;
+      visibility:visible;
+    }
+  &__update{
+    background-color: yellowgreen;
+    // top: 20%;
+    bottom: 15rem;
+    right: 2.5rem;
+    font-size: 2rem;
+    z-index: 10;
+    &-show{
+      animation: fadeIn 2s ease-in;
+      visibility: visible;
+    }
+    // there is a bug when i have any values lower than 2s here
+    // its like the icon pops back up
+    &-hide{
+      visibility: hidden;
+      animation: fadeOut 2s ease-out;
+    }
+  }
+
+  &__add, &__submit,&__update{
+    border:none;
+    position:fixed;
+    padding: .25em .5em;
+    font-weight:700;
+    font-style: italic;
+    border-radius: 50%;
+    cursor:pointer;
+    box-shadow: 0 .5rem 1rem rgba(#000, .3);
+    transition: all 2s;
+    &:hover{
+      box-shadow: 0 1rem 2rem rgba(#000, .2);
+    }
+    &:focus,&:active{
+      outline: none;
+      box-shadow: 0 .75rem 1.5rem rgba(#000, .3);
+    }
+  }
+}
+
+.btnA{
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 4px;
+    transition:  all .2s;
+    position: relative;
+    font-size: 1.2rem;
+    border:none;
+    cursor: pointer;
+
+  }
+  &:hover{
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba(#000,0.3);
+  &::after{
+    transform: scaleX(1.4) scaleY(1.5);
+    opacity: 0;
+    }
+  }
+  &:active,
+  &:focus{
+    outline: none;
+    transform: translateY(-.1rem);
+    box-shadow: 0 3rem 5rem rgba(#000, 0.3);
+  }
+  &--green{
+    background-color: rgba(green,0.8);
+    color: #fff;
+  }
+  &__svg{
+    display: inline-block;
+    width:2.5rem;
+    height: 2.5rem;
+    &:not(:last-child){
+      margin-right: 1.5rem;
+    }
+
+    &--google{
+      fill: #F00;
+    }
+    &--facebook{
+     fill: #26F;
+    }
+  }
+}
